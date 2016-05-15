@@ -16,15 +16,15 @@ def salt_and_pepper_custom(input):
     saltarr2 = np.zeros((28, 28)) #zeros
 
     dim = 28
-    pixs = 8
+    pixs = 5
     range_lim = 1 #white
     range_lim2 = 0 #black
 
     rdarray_x = random.sample(range(0, dim - pixs), range_lim)
-    rdarray_x2 = random.sample(range(0, dim - pixs), range_lim)
+    rdarray_x2 = random.sample(range(10, 20), range_lim)
 
-    rdarray_y = random.sample(range(0, dim - pixs), range_lim2)
-    rdarray_y2 = random.sample(range(0, dim - pixs), range_lim2)
+    #rdarray_y = random.sample(range(0, dim - pixs), range_lim2)
+    #rdarray_y2 = random.sample(range(0, dim - pixs), range_lim2)
 
     for x in range(0, range_lim):
         saltarr[rdarray_x[x]:rdarray_x[x] + pixs, rdarray_x2[x]:rdarray_x2[x] + pixs] = 0 #0
