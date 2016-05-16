@@ -25,7 +25,7 @@ def salt_and_pepper_custom(input):
 
     #rdarray_y = random.sample(range(0, dim - pixs), range_lim2)
     #rdarray_y2 = random.sample(range(0, dim - pixs), range_lim2)
-
+    #git test
     for x in range(0, range_lim):
         saltarr[rdarray_x[x]:rdarray_x[x] + pixs, rdarray_x2[x]:rdarray_x2[x] + pixs] = 0 #0
     for y in range(0, range_lim):
